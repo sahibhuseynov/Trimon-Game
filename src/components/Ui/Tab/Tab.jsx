@@ -1,8 +1,8 @@
 import React,{useState} from 'react'
 import './Tab.scss'
-import Twit from '../../assets/image/twit.jpg'
-import Youtube from '../../assets/image/youtube.jpg'
-import Discord from '../../assets/image/discord.jpg'
+import Twit from '../../../assets/image/twit.jpg'
+import Youtube from '../../../assets/image/youtube.jpg'
+import Discord from '../../../assets/image/discord.jpg'
 import { motion } from 'framer-motion';
 
 const Tab = () => {

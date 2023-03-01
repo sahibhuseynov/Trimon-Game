@@ -2,10 +2,10 @@ import React from 'react'
 import './Home.scss'
 import Inner from '../../components/Inner/Inner'
 import Slider from '../../components/slider/Slider'
-import Tab from '../../components/Tab/Tab'
+import Tab from '../../components/Ui/Tab/Tab'
 import { motion } from 'framer-motion';
 import Product from '../../components/Product/Product'
-import GameIcon from '../../components/GameIcon/GameIcon'
+import GameIcon from '../../components/Ui/GameIcon/GameIcon'
 import SlickSlider from '../../components/slider/SlickSlider'
 import Team from './../../components/Teams/Team';
 import Button from '../../components/Ui/Button/Button'
@@ -15,8 +15,8 @@ import Blog from '../../components/Blog/Blog';
 const Home = () => {
   return (
     <div>
-       <div className="container">
         <Slider />
+       <div className="container">
         <Inner />
         <Tab />
           <div className='text__context'>

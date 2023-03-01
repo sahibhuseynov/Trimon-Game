@@ -4,7 +4,6 @@ import {BsTwitch, BsYoutube } from 'react-icons/bs'
 import teamImg1 from "../../assets/image/team-1.jpg";
 import teamImg2 from "../../assets/image/team-2.jpg";
 import teamImg3 from "../../assets/image/team-3.jpg";
-import { motion } from 'framer-motion';
 
 const Team = () => {
   return (
@@ -17,8 +16,8 @@ const Team = () => {
           <h2>GERALD TIMMONS</h2>
           <span>Creator</span>
           <div className="item__icons">
-          <BsTwitch />
-            <BsYoutube />
+          <BsTwitch className="icon" />
+            <BsYoutube className="icon" />
           </div>
         </div>
       </div>
@@ -31,8 +30,8 @@ const Team = () => {
         <h2>MELITA HWANG</h2>
           <span>Developer</span>
           <div className="item__icons">
-            <BsTwitch />
-            <BsYoutube />
+            <BsTwitch className="icon" />
+            <BsYoutube className="icon" />
           </div>
         </div>
       </div>
@@ -45,8 +44,8 @@ const Team = () => {
         <h2>HINRIK GYLFASON</h2>
           <span>Animator</span>
           <div className="item__icons">
-          <BsTwitch   />
-            <BsYoutube />
+          <BsTwitch  className="icon"  />
+            <BsYoutube  className="icon"/>
           </div>
         </div>
       </div>

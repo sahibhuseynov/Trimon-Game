@@ -1,7 +1,7 @@
 import React from 'react'
 import './GameIcon.scss'
 
-import IconData from '../../assets/data/gameIcons'
+import IconData from '../../../assets/data/gameIcons'
 const GameIcon = () => {
   return (
     <div className='game__icon__grid'>

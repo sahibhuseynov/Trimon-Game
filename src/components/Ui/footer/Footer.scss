@@ -1,0 +1,53 @@
+@import '../../../sass/index.scss';
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ffff;
+    gap: 50px;
+    .footer__logo{
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+        
+        img{
+            width: 110px;
+            height: 110px;
+            
+        }
+        span{
+            font-size: 25px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            font-family: monospace;
+        }
+    }
+    ul{
+        display: flex;
+        column-gap: 50px;
+        justify-content: space-between;
+
+        li{
+            font-size: 18px;
+            font-weight: 700;
+            list-style: none;
+            cursor: pointer;
+            
+           
+           
+        }
+    }
+    .footer__icons__group{
+        display: flex;
+        gap: 25px;
+        font-size: 25px;
+        
+    }
+    .coperation{
+        p{
+            letter-spacing: 2px;
+        }
+    }
+}
