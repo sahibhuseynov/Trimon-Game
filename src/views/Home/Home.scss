@@ -4,7 +4,9 @@
 position: relative;
 display: flex;
 margin-bottom: 60px;
-
+@include tablet {
+    flex-direction: column;
+}
     .text__context__left{
         display: flex;
         flex-direction: column;
@@ -40,7 +42,9 @@ margin-bottom: 60px;
             top: 30px;
             left: -50px;
             rotate: -90deg;
-            
+            @include tablet {
+                display: none;
+            }
         }
     }
 
@@ -50,12 +54,16 @@ margin-bottom: 60px;
         justify-content: end;
         gap: 30px;
         flex: 1;
+
+        
     }
 }
 
 .txt2{
     flex-direction: row-reverse;
-
+    @include tablet {
+        flex-direction: column;
+    }
     h2{
         text-align: end;
     }
@@ -63,6 +71,7 @@ margin-bottom: 60px;
     .text__context__before{
         right: -50px;
         left:auto !important;
+       
     }
 }
 

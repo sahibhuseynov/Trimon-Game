@@ -6,7 +6,7 @@ import Button from "./../Ui/Button/Button";
 
 const Inner = () => {
   return (
-    <section className="container">
+   
       <div className="inner">
         <motion.div
           initial={{ opacity: 0, y: 100 }}
@@ -71,7 +71,6 @@ const Inner = () => {
 
         </div>
       </div>
-    </section>
   );
 };
 

@@ -4,7 +4,9 @@
    margin-bottom: 150px;
     .btn__group{
         display: flex;
-
+        @include tablet {
+            flex-direction: column;
+        }
         button{
             width: 240px;
         height: 50px ;
@@ -20,7 +22,9 @@
             background: transparent;
             cursor: pointer;
             position: relative;
-
+            @include tablet {
+                width: auto;
+            }
             &:hover{
                 .line{
                     width:100%;
@@ -52,7 +56,12 @@
         border: 1px solid #ffff;
         .tab__image{
 height: 450px;
-
+@include tablet {
+   height: 300px;
+}
+@include mobile {
+    height: 200px;
+ }
             img{
                 width: 100%;
                 height: 100%;
