@@ -7,6 +7,7 @@ footer{
     justify-content: center;
     border: 2px solid #ffff;
     gap: 50px;
+    padding: 40px 0;
     .footer__logo{
         display: flex;
         align-items: center;
@@ -48,6 +49,14 @@ footer{
     .coperation{
         p{
             letter-spacing: 2px;
+            color:#8D8D8D8D;
+            span{
+                cursor: pointer;
+                transition: $transition;
+                &:hover{
+                        color: #ffff;
+                }
+            }
         }
     }
 }

@@ -81,9 +81,9 @@ const Slider = () => {
     <motion.div key={index} className="slider ">
       
         <motion.img
-          initial={{ scale: 1 }}
-          animate={{ scale: 1.2, x: 100 }}
-          transition={{ duration: 11.5 }}
+          // initial={{ scale: 1 }}
+          // animate={{ scale: 1.2, x: 100 }}
+          // transition={{ duration: 11.5 }}
           src={image}
         />
 

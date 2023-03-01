@@ -6,6 +6,12 @@
   position: relative;
 overflow: hidden;
 margin-bottom: 200px;
+@include tablet{
+  height: 450px;
+}
+@include mobile{
+  height: 400px;
+}
   img {
     width: 100%;
     height: 100%;
@@ -18,17 +24,28 @@ margin-bottom: 200px;
     display: flex;
     align-items: end;
     justify-content: space-between;
-
+    @include tablet{
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 60px 15px;
+    }
     .left__content {
       display: flex;
       flex-direction: column;
       position: relative;
+
+      
       .left__content__box{
         display: flex;
         flex-direction: column;
         overflow: hidden;
+
+        @include tablet{
+          align-items: center;
+        }
         h1 {
-          font-size: 55px;
+         
           font-weight: 700;
           margin-bottom: 15px;
           letter-spacing: 7px;
@@ -47,6 +64,17 @@ margin-bottom: 200px;
         top: 30px;
         left: -60px;
         -webkit-transform: rotate(-90deg);
+
+        @include laptop{
+          top: -15px;
+          left: 5px;
+          rotate: (90deg);
+        }
+        @include tablet{
+          left: 50%;
+          transform: translate(-50%,-50%);
+          rotate: (360deg);
+        }
       }
     }
 
@@ -54,6 +82,9 @@ margin-bottom: 200px;
       display: flex;
       align-items: center;
       column-gap: 15px;
+      @include tablet{
+        column-gap: 40px;
+      }
       img {
         width: 50px;
         height: 50px;
@@ -64,7 +95,10 @@ margin-bottom: 200px;
         -moz-filter: invert(100%);
         cursor: pointer;
         transition: $transition;
-        
+        @include tablet{
+          width: 35px;
+          height: 35px;
+        }
         &:hover{
             transform: translateX(-7px);
         }

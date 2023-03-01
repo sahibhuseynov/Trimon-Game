@@ -4,6 +4,7 @@ import FooterLogo from '../../../assets/image/logo.svg'
 import {BsFacebook, BsTwitch, BsTwitter, BsYoutube } from 'react-icons/bs'
 
 const Footer = () => {
+  const year = new Date().getFullYear()
   return (
     <footer>
       <div className='footer__logo'>
@@ -40,7 +41,7 @@ const Footer = () => {
       </div>
 
       <div className="coperation">
-        <p>© 2023 Qode Interactive, All Rights Reserved</p>
+        <p><span>Huseynov © {year}, </span>Powered by Trimon</p>
       </div>
     </footer>
   )
