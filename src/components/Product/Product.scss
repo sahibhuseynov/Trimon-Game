@@ -1,0 +1,74 @@
+@import '../../sass/index.scss';
+
+
+.products__grid{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 40px;
+    margin-bottom: 150px;
+    .product__box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 12px;
+    .product__box__img{
+
+            margin-bottom: 15px;
+            border: 1px solid #ffff;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            cursor: pointer;
+        }
+
+
+    }
+
+        h5{
+            font-size: 19px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            margin-bottom: 15px;
+        }
+
+        span{
+
+            position: absolute;
+            bottom: 0;
+            transition: $transition;
+        }
+        .product__add{
+            position: absolute;
+            bottom: -80px;
+            transition: $transition;
+
+            button{
+                background: transparent;
+                border: none;
+                outline: none;
+                color: #fff;
+                cursor: pointer;
+                &:hover{
+                    color: #e8e8e8;
+                }
+            }
+        }
+
+        &:hover{
+
+            .product__add{
+                bottom: 0;
+            }
+
+            span{
+                bottom: -40px;
+            }
+        }
+    }
+
+}

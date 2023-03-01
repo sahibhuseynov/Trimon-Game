@@ -1,0 +1,24 @@
+@import '../../sass/index.scss';
+
+
+.game__icon__grid{
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    column-gap: 40px;
+margin-bottom: 150px;
+    .game__icon{
+        height: 110px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: $transition;
+            filter: grayscale(100%);
+            cursor: pointer;
+            &:hover{
+                filter: grayscale(0);
+            }
+        }
+        
+    }
+}

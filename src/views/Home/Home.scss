@@ -1,0 +1,73 @@
+@import '../../sass/index.scss';
+
+.text__context{
+position: relative;
+display: flex;
+margin-bottom: 60px;
+
+    .text__context__left{
+        display: flex;
+        flex-direction: column;
+        flex: 1.15;
+        position: relative;
+        
+        .context__title{
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            h2{
+                font-size: 32px;
+                letter-spacing: 3px;
+                margin-bottom: 18px;
+                
+                
+            }
+        
+            p{
+                font-family: "Space Mono",sans-serif;
+        font-size: 18px;
+        line-height: 1.66667em;
+        font-weight: 400;
+        letter-spacing: normal;
+        margin-bottom: 35px;
+            }
+        }
+        
+    
+        .text__context__before{
+            width: fit-content;
+            position: absolute;
+            top: 30px;
+            left: -50px;
+            rotate: -90deg;
+            
+        }
+    }
+
+    .text__context__right{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 30px;
+        flex: 1;
+    }
+}
+
+.txt2{
+    flex-direction: row-reverse;
+
+    h2{
+        text-align: end;
+    }
+
+    .text__context__before{
+        right: -50px;
+        left:auto !important;
+    }
+}
+
+.txt3{
+    .text__context__left{
+        flex: 0.6 !important;
+    }
+}
