@@ -10,14 +10,15 @@ import SlickSlider from '../../components/slider/SlickSlider'
 import Team from './../../components/Teams/Team';
 import Button from '../../components/Ui/Button/Button'
 import Input from '../../components/Ui/Input/Input'
+import Blog from '../../components/Blog/Blog';
 
 const Home = () => {
   return (
     <div>
+       <div className="container">
         <Slider />
         <Inner />
         <Tab />
-       <div className="container">
           <div className='text__context'>
             <div className='text__context__left'>
             <motion.div
@@ -108,7 +109,9 @@ const Home = () => {
               <Button size={"lg"} innerText={"SIGNUP"} />
             </div>
           </div >
+          <Blog />
           </div>
+
     </div>
   )
 }
