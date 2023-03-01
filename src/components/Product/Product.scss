@@ -6,6 +6,16 @@
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 40px;
     margin-bottom: 150px;
+
+    @include laptop{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    }
+    
+    @include mobile2{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+
+    }
     .product__box{
         display: flex;
         flex-direction: column;
