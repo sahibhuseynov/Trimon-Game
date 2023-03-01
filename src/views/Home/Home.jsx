@@ -30,7 +30,7 @@ const Home = () => {
           </motion.div>
             <div className='context__title'>
               <motion.h2
-              initial={{ opacity: 0, x: -500 }}
+              initial={{ opacity: 0, x: -300 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
             >
@@ -58,7 +58,7 @@ const Home = () => {
             <div className='text__context__left'>
             <div className='context__title'>
               <motion.h2
-              initial={{ opacity: 0, x: 500 }}
+              initial={{ opacity: 0, x: 300 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
             >
