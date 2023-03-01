@@ -8,7 +8,10 @@
     background: transparent;
     color: #ffff;
     font-family: monospace;
-    
+    flex: 2;
+    @include laptop{
+        width: 100% !important;
+    }
     &::placeholder{
         color: #ffff;
     }
@@ -22,5 +25,6 @@
         width: 350px;
         height: 50px ;
         font-size: 17px;
+        
     }
 }

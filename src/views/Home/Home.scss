@@ -76,7 +76,16 @@ margin-bottom: 60px;
 }
 
 .txt3{
+    @include laptop{
+        flex-direction: column;
+    }
     .text__context__left{
         flex: 0.6 !important;
+    }
+
+    .text__context__right{
+        @include mobile2 {
+            flex-direction: column;
+        }
     }
 }

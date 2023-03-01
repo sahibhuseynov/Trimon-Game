@@ -106,7 +106,7 @@ const Home = () => {
             </div>
             <div className='text__context__right'>
               <Input size={"lg"} />
-              <Button size={"lg"} innerText={"SIGNUP"} />
+              <Button size={"full"} innerText={"SIGNUP"} />
             </div>
           </div >
           <Blog />

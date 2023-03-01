@@ -8,13 +8,31 @@ import galery4 from '../../assets/image/h1-gallery-img-4.jpg'
 const SlickSlider = () => {
     const settings = {
         dots: true,
-        
         autoplay: true,
         speed: 700,
-  loop: false,
-  loopFillGroupWithBlank: true,
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+            {
+              breakpoint: 991,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  infinite: true,
+                  dots: true
+                }
+              },
+            
+          ],
       };
   return (
     <div className='silder'>
