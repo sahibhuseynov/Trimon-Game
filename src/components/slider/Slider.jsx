@@ -6,6 +6,7 @@ import SliderImage3 from "../../assets/image/h1-slider-img-3.jpg";
 import SliderImage4 from "../../assets/image/h1-slider-img-4.jpg";
 import SliderImage5 from "../../assets/image/h1-slider-img-5.jpg";
 import ArrowIcon from "../../assets/image/left-arrow.svg";
+import ArrowIcon2 from "../../assets/image/right-arrow.svg";
 import Button from "./../Ui/Button/Button";
 import { AnimatePresence, delay, motion } from "framer-motion";
 const slides = [
@@ -118,7 +119,7 @@ const Slider = () => {
 
           <div className="right__content">
             <img onClick={prevPerson} src={ArrowIcon} alt="" />
-            <img onClick={nextPerson} src={ArrowIcon} alt="" />
+            <img onClick={nextPerson} src={ArrowIcon2} alt="" />
           </div>
         </div>
       
