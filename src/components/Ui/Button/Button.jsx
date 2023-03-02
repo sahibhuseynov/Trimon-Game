@@ -6,16 +6,7 @@ const Button = ({
     onClick,
     innerText,
 }) => {
-  const [smalScreen, setSmalScreen] = useState(false);
-
-  useEffect(() => {
-    if (window.innerWidth <= 768) {
-      setSmalScreen(true);
-    } else {
-      setSmalScreen(false);
-    }
-    return 
-  }, []);
+  
   
 
   return (

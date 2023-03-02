@@ -110,7 +110,7 @@ const Slider = () => {
                 animate={{ x: 0 }}
                 transition={{ duration: 1.2 }}
               >{title}</motion.span>
-              <Button size={"lg"} innerText="READ MORE" />
+              <Button size={"xl"} innerText="READ MORE" />
             </div >
 
             

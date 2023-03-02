@@ -7,7 +7,8 @@ footer{
     justify-content: center;
     border: 2px solid #ffff;
     gap: 50px;
-    padding: 40px 0;
+    padding: 40px;
+    text-align: center;
     .footer__logo{
         display: flex;
         align-items: center;
@@ -27,8 +28,10 @@ footer{
     }
     ul{
         display: flex;
+        flex-wrap: wrap;
         column-gap: 50px;
-        justify-content: space-between;
+        row-gap: 10px;
+        justify-content: center;
 
         li{
             font-size: 18px;
