@@ -66,7 +66,7 @@ const Inner = () => {
               unde omnis iste natus.
             </p>
   
-            <Button size={"lg"} innerText={"READ MORE"} />
+            <Button size={"lg2"} innerText={"READ MORE"} />
          </div >
 
         </div>

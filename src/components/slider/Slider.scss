@@ -25,7 +25,7 @@ margin-bottom: 200px;
     display: flex;
     align-items: end;
     justify-content: space-between;
-    @include tablet{
+    @include mobile{
       flex-direction: column;
       align-items: center;
       text-align: center;
@@ -42,7 +42,7 @@ margin-bottom: 200px;
         flex-direction: column;
         overflow: hidden;
 
-        @include tablet{
+        @include mobile{
           align-items: center;
         }
         h1 {
@@ -71,7 +71,7 @@ margin-bottom: 200px;
           left: 5px;
           rotate: (90deg);
         }
-        @include tablet{
+        @include mobile{
           left: 50%;
           transform: translate(-50%,-50%);
           rotate: (360deg);
@@ -83,7 +83,7 @@ margin-bottom: 200px;
       display: flex;
       align-items: center;
       column-gap: 15px;
-      @include tablet{
+      @include mobile{
         column-gap: 40px;
       }
       img {
